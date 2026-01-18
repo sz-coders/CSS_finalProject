@@ -1,0 +1,86 @@
+main {
+  text-align: center;
+}
+
+img {
+  height: 150px;
+}
+
+aside {
+  margin-top: 60px;
+  text-align: left;
+}
+
+aside p {
+  margin-bottom: 0px;
+}
+
+/*     COFFEE GRID     */
+
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  margin: 50px 0 50px 0;
+}
+
+.coffee-card {
+  background: linear-gradient(to bottom, #ffffff, #fff7ed);
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #e3c9a8;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.coffee-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #4b2e2e;
+}
+
+.coffee-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.coffee-card img {
+  max-width: 170px;
+  border-radius: 10px;
+}
+
+.coffee-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(1s, 1fr);
+  margin: 30px 0 30px 0;
+}
+
+.video-grid .video {
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/*     RESPONSIVE     */
+
+@media (max-width: 412px) {
+  
+  .coffee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  iframe {
+    width: 380px;
+    height: 205px;
+  }
+}

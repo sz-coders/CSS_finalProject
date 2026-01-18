@@ -1,0 +1,106 @@
+h1 {
+  color: #4b2e05;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  text-align: center;
+  color: #4b2e05;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  margin: top 20px bottom 20px;
+}
+
+.rate-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 10px;
+}
+
+form {
+  background: #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  margin: 2rem auto;
+  padding: 30px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+div label {
+  margin-top: 5px;
+}
+
+label {
+  margin-top: 20px;
+}
+
+.topic-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+input,
+select,
+textarea,
+button {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+  transform: scale(1.1);
+}
+
+button {
+  background-color: #4b2e05;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #6b4510;
+}
+
+#comments {
+  min-height: 100px;
+  padding: 15px;
+  resize: vertical;
+}
+
+.gray {
+  color: gray;
+}
+
+.brown {
+  background-color: #4b2e05;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (max-width: 412px) {
+  
+  .topic-checkbox label {
+    width: 120px;
+  }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Feedback — The Coffee Chronicles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/feedback.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="coffee-nav">
+        <span class="site-title">The Coffee Chronicles</span>
+
+        <a href="nav.html">
+          <img class="hamburger-icon" src="../images/hamburger-icon.png" />
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+
+          <li class="has-dropdown">
+            <a href="types.html">Coffee & Beans</a>
+            <ul class="dropdown">
+              <li><a href="types.html#espresso">Espresso</a></li>
+              <li><a href="types.html#cappuccino">Cappuccino</a></li>
+              <li><a href="types.html#latte">Latte</a></li>
+              <li><a href="types.html#americano">Americano</a></li>
+              <li><a href="types.html#mocha">Mocha</a></li>
+              <li><a href="types.html#cold-brew">Cold Brew</a></li>
+              <li>
+                <a href="beans.html">Know Your Beans</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="brewing.html">Brewing Methods</a>
+            <ul class="dropdown">
+              <li><a href="brewing.html#french-press">French Press</a></li>
+              <li><a href="brewing.html#moka-pot">Moka Pot</a></li>
+              <li>
+                <a href="brewing.html#clever-dripper">Clever Dripper</a>
+              </li>
+              <li>
+                <a href="brewing.html#espresso-machine">Espresso Machine</a>
+              </li>
+              <li><a href="brewing.html#aeropress">AeroPress</a></li>
+              <li><a href="brewing.html#pour-over">Pour Over</a></li>
+              <li><a href="brewing.html#cezve">Cezve</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="around.html">Coffee Around the World</a>
+            <ul class="dropdown">
+              <li><a href="around.html#ethiopia">Ethiopia</a></li>
+              <li><a href="around.html#italy">Italy</a></li>
+              <li><a href="around.html#turkey">Turkey</a></li>
+              <li><a href="around.html#japan">Japan</a></li>
+              <li><a href="around.html#brazil">Brazil</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="barista.html">Barista Training</a>
+            <ul class="dropdown">
+              <li>
+                <a href="barista.html#course-description">Course Description</a>
+              </li>
+              <li>
+                <a href="registration.html">Registration</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="feedback.html">Your Feedback</a>
+            <ul class="dropdown">
+              <li>
+                <a href="feedback.html">Feedback Form</a>
+              </li>
+              <li>
+                <a href="survey.html">Survey Form</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </nav>
+      <hr />
+      <h1>Your Feedback</h1>
+      <p>Send us feedback your because IT MATTERS!!</p>
+    </header>
+
+    <form id="feedback-form">
+      <!-- Name -->
+      <label id="name-label" for="name" class="label">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <!-- Email -->
+      <label id="email-label" for="email" class="label">Email Address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+      />
+
+      <!-- Number -->
+      <label id="number-label" for="number" class="label">Contact No.:</label>
+      <input
+        type="number"
+        id="number"
+        name="number"
+        placeholder="Enter your contact no."
+        min="10"
+        max="100"
+        required
+      />
+
+      <!-- Rate Website -->
+      <label id="rate" for="rating" class="label">Rate Our Website:</label>
+      <div class="rate-label"><label>Poor</label><label>Best</label></div>
+      <input
+        type="range"
+        id="rating"
+        name="rating"
+        min="0"
+        max="5"
+        step="1"
+        value="3"
+      />
+
+      <!-- Checkboxes -->
+      <label class="label">Topic:</label>
+      <div class="topic-checkbox">
+        <label
+          ><input type="checkbox" name="add-ins" value="site-suggestion" /> Site
+          Suggestion</label
+        ><br />
+        <label
+          ><input type="checkbox" name="add-ins" value="correction" />
+          Correction</label
+        ><br />
+        <label
+          ><input type="checkbox" name="add-ins" value="course" /> Barista
+          Course</label
+        ><br />
+        <label
+          ><input type="checkbox" name="add-ins" value="other" /> Other</label
+        ><br />
+      </div>
+
+      <!-- Textarea -->
+      <label class="label">Any Message?</label>
+      <textarea
+        id="comments"
+        name="comments"
+        placeholder="Share your coffee thoughts..."
+      ></textarea
+      ><br />
+
+      <!-- Submit -->
+      <input id="submit" type="submit" class="brown" /><br />
+    </form>
+
+    <br /><br />
+
+    <footer>
+      <p>
+        Contact:
+        <a href="mailto:info@thecoffeechronicles.com"
+          >info@thecoffeechronicles.com</a
+        >
+        <code>&copy;</code> The Coffee Chronicles-2025
+      </p>
+    </footer>
+  </body>
+</html>
